@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h1 {
+    color: #d9534f; /* Red */
+}
+
+
+#movieBanner {
+    background-image: url('https://facts.net/wp-content/uploads/2024/09/40-facts-about-pumas-vs-tigres-1725302688.jpg'); /* Background Image */
+    background-size: cover; /* Cover the entire banner */
+    background-position: center; /* Center the image */
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative; /* Relative positioning for absolute children */
+}
+
+
+.card {
+    border: 1px solid #d9534f; /* Red */
+    border-radius: 5px;
+    transition: transform 0.2s;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align children vertically */
+    height: 100%; /* Allow card to fill the available height */
+}
+.card-body {
+    flex-grow: 1; /* Make the body grow to fill available space */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #004085; /* Dark Blue */
+}
+
+
+.btn-primary {
+    background-color: #d9534f; /* Red */
+    border: none;
+    outline: none; /* Remove outline */
+}
+
+/* Remove outline on focus for all buttons */
+.btn:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.btn-outline-light {
+    color: #004085; /* Dark Blue */
+    border-color: #fcfcfc;
+}
+
+.btn-outline-light:hover {
+    background-color: #004085; /* Dark Blue */
+    color: #fff;
+}
+
+
+.form-control {
+    border-color: #d9534f; /* Red */
+}
+
+.form-control:focus {
+    border-color: #004085; /* Dark Blue */
+    box-shadow: 0 0 5px rgba(0, 64, 133, 0.5);
+}
+#movieInfo h5{
+    /* text-align: center; */
+    background: #d9534f;
+    padding: 15px ;
+
+    color: #ffffff !important;
+    font-size: 33px;
+}
+#movieInfo p{
+    /* text-align: center; */
+    background: #004085;
+    padding: 15px ;
+    color: #ffffff !important;
+}
+#movieInfo a{
+    /* text-align: center; */
+    color: #ffffff !important;
+}
+/* Responsive Design */
+@media (max-width: 576px) {
+    #movieBanner {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+.footer {
+    background-color: #2c3e50; 
+    color: #ffffff;
+    padding: 20px 0; 
+ 
+    bottom: 0;
+    width: 100%; 
+}
+
+
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
